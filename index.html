@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Antar Jemput Penumpang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>JASA ANTAR JEMPUT PENUMPANG</h1>
+        <p>Layanan antar jemput penumpang yang cepat, aman, dan nyaman.</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="form-box">
+            <h2>Selamat Datang di Layanan Kami!</h2>
+            <p>Isi detail perjalanan Anda, dan kami akan segera menjemput Anda.</p>
+            
+            <input type="text" id="lokasiPenjemputan" placeholder="Lokasi Penjemputan" required>
+            <input type="text" id="tujuan" placeholder="Tujuan Anda" required>
+            <input type="text" id="namaUser" placeholder="Nama Anda" required>
+            <input type="text" id="pesanDriver" placeholder="Pesan untuk driver (opsional)">
+
+            <button id="submitBtn" onclick="sendToWhatsApp()">Kirim Request</button>
+        </div>
+
+        <p class="contact-info">Hubungi kami untuk pertanyaan lebih lanjut!</p>
+        <a href="https://wa.me/628895885691" target="_blank" class="whatsapp-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40px">
+        </a>
+    </div>
+
+    <script>
+        function sendToWhatsApp() {
+            const lokasiPenjemputan = document.getElementById('lokasiPenjemputan').value;
+            const tujuan = document.getElementById('tujuan').value;
+            const namaUser = document.getElementById('namaUser').value;
+            const pesanDriver = document.getElementById('pesanDriver').value;
+
+            const message = `Halo, saya ingin menggunakan layanan antar jemput penumpang.%0ALokasi Penjemputan: ${lokasiPenjemputan}%0ATujuan: ${tujuan}%0ANama: ${namaUser}%0APesan untuk driver: ${pesanDriver}`;
+
+            window.open(`https://wa.me/628895885691?text=${message}`, '_blank');
+        }
+    </script>
+
+</body>
+</html>
