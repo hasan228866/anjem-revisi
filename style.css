@@ -16,8 +16,8 @@ body {
 }
 
 @keyframes gradientShift {
-    0% { background: #1e90ff; }
-    100% { background: #87cefa; }
+    0% { background: #ff6b6b; }
+    100% { background: #FF2929; }
 }
 
 /* Header Styling */
@@ -26,14 +26,14 @@ header {
     padding: 20px;
     text-align: center;
     background-color: #ffffff;
-    border-bottom: 4px solid #1e90ff;
+    border-bottom: 4px solid #FF2929;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeInDown 1s ease-in-out;
 }
 
 header h1 {
     font-size: 28px;
-    color: #1e90ff;
+    color: #FF2929;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -67,7 +67,7 @@ header p {
 }
 
 .form-box h2 {
-    color: #1e90ff;
+    color: #FF2929;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -89,13 +89,13 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border-color: #1e90ff;
+    border-color: #FF2929;
     box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
 }
 
 /* Button Styling */
 button {
-    background-color: #1e90ff;
+    background-color: #FF2929;
     color: white;
     padding: 12px;
     border: none;
@@ -106,9 +106,9 @@ button {
 }
 
 button:hover {
-    background-color: #1565c0;
+    background-color: #bb0000;
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(108, 0, 0, 0.4);
 }
 
 /* Contact Info */
